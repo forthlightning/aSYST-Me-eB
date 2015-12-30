@@ -8,3 +8,7 @@ The python code waits for a response from the HTML form on the website.
 1118 works without the server running, and makes a simple energy use estimate. 
 
 Arduino codes run on a standard arduino UNO board. 
+
+Katie Zheng contributed to the gmaps code, as well as the nanoserver edits. 
+Grace Vasiknanonte made the website in almost its entirety.
+Preet Gill was also involved with the project. 
