@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form id="UserInput">
+Location: <input name="location" type="text" size="20">
+Destination: <input name="destination" type="text" size="20">
+</form>
+<button onclick="modelInput()">Submit</button>
+<div id="t"></div>
+<script>
+function modelInput(){
+var location,destination;
+x=document.getElementById("UserInput");
+console.log(x.elements["location"]);
+y= x.elements["location"].value;
+z= x.elements["destination"].value;
+document.getElementById("work").innerHTML="Here is your Energy Use from "+y+" to "+z+"<br>";
+ }
+
+</script>
+<p id="work"></p>
+</body>
+</html>
+

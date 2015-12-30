@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	
+		<!-- Dashboard JS Exercise -->
+		<!-- Based on the Bootstrap Dashboard example, http://getbootstrap.com/getting-started/ -->
+	
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Dashboard JS Exercise</title>
+
+		<!-- Include Bootstrap CSS Framework -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- Include Custom CSS For This Template -->
+		<link rel="stylesheet" href="dashboard.css">
+		<!-- Include Custom CSS For This Exercise -->
+		<link rel="stylesheet" href="style.css">
+	
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#content-Navigate">aSYST-ME eB</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+<!--            <li><a href="#">Dashboard</a></li>-->
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li id="nav-Navigate" class="active"><a href="#">Navigate</a></li>
+            <li id="nav-Plots"><a href="#">Plots</a></li>
+            <li id="nav-Gallery"><a href="#">Gallery</a></li>
+<!--            <li id="nav-Export"><a href="#">Export</a></li>-->
+            <li id="nav-Team"><a href="#">Team</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Dashboard</h1>
+            
+            <form action="network/eBikeDemo/object/DataVisual/stream/inputCoordinates" id="UserInput">
+            ~  Origin: <input id="origin" name="origin" type="text" size="30">  ~  
+            Destination: <input id="destination" name="destination" type="text" size="30">
+            <input type="submit" value="Submit">
+            </form>
+            <br>
+					
+          <div id="dashboard-select" class="row placeholders">
+					
+					<!-- =========================================
+					            Stream Icons Go Here
+					========================================= -->
+					
+          </div>
+					
+          
+					<div id="content" class="row">
+
+					<!-- =========================================
+					            Content Goes Here
+					========================================= -->
+					
+					
+					</div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Include JavaScript files -->
+    <!-- Placed at the end of the document so the pages load faster -->
+		<!-- Include jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Include Bootstrap JS Framework -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      
+      		
+        <!-- Google Maps -->
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+      
+		<!-- Include Highcharts library -->
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="http://code.highcharts.com/modules/exporting.js"></script>
+		<!-- Include Custom JS For This Exercise -->
+		<script src="dashboard.js"></script>
+		
+  </body>
+</html>
